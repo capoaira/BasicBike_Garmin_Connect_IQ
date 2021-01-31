@@ -1,0 +1,13 @@
+project.manifest = manifest.xml
+
+# Configure paths based on screen shape
+round.resourcePath = $(base.resourcePath);resource-round
+semiround.resourcePath = $(base.resourcePath);resource-semiround
+rectangle.resourcePath = $(base.resourcePath);resource-rectangle
+
+# Say that all products exclude declarations
+# with the annotation :roundVersion
+base.excludeAnnotations = roundVersion
+# Now say that the round products exclude
+# the regular version
+round.excludeAnnotations = regularVersion

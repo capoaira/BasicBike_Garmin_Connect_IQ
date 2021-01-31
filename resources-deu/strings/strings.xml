@@ -1,0 +1,9 @@
+<strings>
+    <string id="AppName">Basic Bike</string>
+
+    <string id="label_currentSpeed">Geschwindigkeit</string>
+    <string id="label_averageSpeed">Avg:</string>
+    <string id="label_maxSpeed">max:</string>
+    <string id="label_dist">Distanz</string>
+    <string id="label_timer">Verstrichene Zeit</string>
+</strings>
