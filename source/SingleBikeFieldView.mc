@@ -97,7 +97,7 @@ class SingleBikeFieldView extends Ui.DataField {
 	    averageSpeed = info.averageSpeed == null ? 0 : info.averageSpeed*3.6;
 //	    maxSpeed = info.maxSpeed == null ? 0 : info.maxSpeed*3.6;
 	    dist = info.elapsedDistance == null ? 0 : Math.floor(info.elapsedDistance/100)/10;
-	    var t = info.elapsedTime/1000;
+	    var t = info.elapsedTime == null ? 0 : info.elapsedTime/1000;
 	    var sec = t%60;
 	    t -= t%60;
 	    var min = (t/60)%60;
@@ -118,7 +118,7 @@ class SingleBikeFieldView extends Ui.DataField {
 
         // Set the foreground color and value
         var value_time = View.findDrawableById("value_time");
-        value_time.setColor(Gfx.COLOR_DK_GRAY);
+        value_time.setColor(Gfx.COLOR_BLACK);
         value_time.setText(time);
 
         var value_currentSpeed = View.findDrawableById("value_currentSpeed");
