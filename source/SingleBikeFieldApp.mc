@@ -2,21 +2,21 @@ using Toybox.Application;
 
 class SingleBikeFieldApp extends Application.AppBase {
 
-    function initialize() {
-        AppBase.initialize();
-    }
+	function initialize() {
+		AppBase.initialize();
+	}
 
-    // onStart() is called on application start up
-    function onStart(state) {
-    }
+	// onStart() is called on application start up
+	function onStart(state) {
+	}
 
-    // onStop() is called when your application is exiting
-    function onStop(state) {
-    }
+	// onStop() is called when your application is exiting
+	function onStop(state) {
+	}
 
-    //! Return the initial view of your application here
-    function getInitialView() {
-        return [ new SingleBikeFieldView() ];
-    }
+	//! Return the initial view of your application here
+	function getInitialView() {
+		return [ new SingleBikeFieldView() ];
+	}
 
 }
